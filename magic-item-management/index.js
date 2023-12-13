@@ -7,25 +7,21 @@ class itemMagico {
         this.dano = danoItem
         this.resistencia = resistenciaItem
     }
+    calcularDano() {
+        return this.tipo === 'arma' ? this.dano * 2 : this.dano
+    }
 }
 
-function calcularDano() {
-    return tipoItem === 'arma' ? danoItem * 2 : danoItem
-}
 
 const tipoItem = read.question("Digite o tipo do item: ")
 const danoItem = parseInt(read.question("Digite o dano do item: "))
 const resistenciaItem = parseInt(read.question("Digite a resistência do item: "))
 
-var itemPersonalizado = {
-    tipo: tipoItem,
-    dano: danoItem,
-    resistencia: resistenciaItem,
-}
+let itemPersonalizado = new itemMagico(tipoItem, danoItem, resistenciaItem)
 
 console.log(`Tipo: ${itemPersonalizado.tipo}`)
 console.log(`Dano: ${itemPersonalizado.dano}`)
 console.log(`Resistência: ${itemPersonalizado.resistencia}`)
 
-const danoTotal = calcularDano()
+const danoTotal = itemPersonalizado.calcularDano()
 console.log(`Dano em combate: ${danoTotal}`)
