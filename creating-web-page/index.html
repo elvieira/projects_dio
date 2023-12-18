@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas e Tags Básicas do HTML5</title>
+</head>
+<body>
+    <h1>Estruturas e Tags Básicas do HTML5</h1>
+    <hr>
+    <h2>Índice</h2>
+    <ol>
+        <li><a href="#ind1">Estrutura Básica</a></li>
+        <li><a href="#ind2">Conteúdo do HEAD</a></li>
+        <li><a href="#ind3">Conteúdo do BODY</a></li>
+        <li><a href="#ind4">Tags HTML e seus Significados</a></li>
+    </ol>
+    <p>O HTML5 é a nova versão padrão do <abbr title="HyperText Markup Language">HTML</abbr> com novas Tags e APIs capazes de inserir facilmente um arquivo de audio ou vídeo em um site. Basicamente o HTML seria o esqueleto do seu site, que deverá ser formatado (ou vestido) utilizando a linguagem <abbr title="Cascading Style Sheet">CSS</abbr>.</p>
+    <h2 id="ind1">Estrutura Básica</h2>
+    <hr>
+    <p>A estrutura básica do HTML5 é parecida a estrutura do XHTML e do HTML 4, contendo elementos HEAD e BODY.</p>
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;head&gt;
+    
+            &lt;/head&gt;
+            &lt;body&gt;
+    
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <p>O DOCTYPE define qual tipo de arquivo você está escrevendo, ela é responsável por informar ao navegador qual é este tipo. É o primeiro código a ser adicionado em uma página.</p>
+    <del>
+        <small>
+            <p>Enquanto o XHTML 1.0 trazia mais informações, o DOCTYPE do HTML5 é mais simples. Segue abaixo exemplo do DOCTYPE do XHTML:</p>
+            <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code>
+        </small>
+    </del>
+    <p>A tag html define o início da sua página, nela podemos adicionar o <i>lang</i> definindo a linguagem (português, inglês, espanhol, etc) da página. Este atributo ajuda aos leitores de tela a ler corretamente os textos contidos na página, além dos buscadores poderem identificar o idioma e para que o navegador possa utilizar o dicionário gramatical mais correto.</p>
+    <h2 id="ind2">Conteúdo do HEAD</h2>
+    <hr>
+    <p>No <i>head</i> ficarão informações conhecidas como <i>metadados</i>, que normalmente são globais, não aparecem na página, mas podem efetuar modificações na mesma. Aqui adicionamos o <i>title</i> para definir o título da página e mais <i>metas</i> <i>viewport</i>, <i>charset</i>, <i>description</i>, <i>keywords</i>, <i>cards</i> para as rede sociais, links de arquivos <i>css</i> e <i>javascript</i>.</p>
+    <p>Dentro do head um dos comandos mais importantes é o <strong>title</strong>. Ele define o título da página e ajuda os buscadores, influenciando o Google por exemplo, a mostrar os contedos mais relevantes. O ideal é que o title tenha até 65 caracteres e que cada página dentro do seu site tenha uma diferente, identificando em qual página do site a pessoa está.</p>
+    <h3>Meta Tags</h3>
+    <p>As metas ajudam o seu site a descrever seu conteúdo aos buscadores, como o Google. Aqui você poderá dizer qual a codificação (charset), descrição e até palavras-chaves referentes a sua página.</p>
+    <p>Essas são importantes justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para realizar suas buscas, mas elas são uma parte importante.</p>
+    <p>Abaixo lista tas metas mais importantes:</p>
+    <ul>
+        <li><strong><mark>description</mark></strong>: guarda a descrição do site, utilizado nos motores de busca.</li>
+        <li><strong><mark>keywords</mark></strong>: palavras chaves relacionadas ao site, utilizada nos primórdios pelos motores de busca.</li>
+        <li><strong><mark>author</mark></strong>: idenfitica o autor do site</li>
+        <li><strong><mark>robots</mark></strong>: ajuda os robos dos motores de busca a indexar ou não um site. Com esta opção podemos dizer se uma determinada página do site não deve ser mostrada nos resultados de uma busca.</li>
+    </ul>
+    <p>Exemplo de utilização:</p>
+    <pre>
+        <code>
+            &lt;head&gt;
+                &lt;title&gt;Página do Burnes - Home&lt;/title&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;meta name="description" content="Página do Burnes sobre HTML e CSS"&gt;
+                &lt;meta name="keywords" content="html, css, js, site"&gt;
+                &lt;meta name="robots" content="index"&gt;
+            &lt;/head&gt;
+        </code>
+    </pre>
+    <h2 id="ind3">Conteúdo do BODY</h2>
+    <hr>
+    <p>Por fim, no <i>body</i> ficarão as <i>tags</i> e informações que serão mostradas ao seu usuário, interpretada pelo navegador.</p>
+    <h2 id="ind4">Tags HTML e seus Significados</h2>
+    <hr>
+    <ul>
+        <li><strong>DOCTYPE:</strong> define o tipo de documento</li>
+        <li><strong>html:</strong> define o início do documento html, todos as demais tags devem estar dentro desta tag</li>
+        <li><strong>head:</strong> cabeçalho onde ficar os metadados do documento, como metatgs, css e javascript</li>
+        <li><strong>title:</strong> define o título do documento, mostrado na barra de títulos do navegador e como link nos mecanismos de busca</li>
+        <li><strong>base:</strong> define a url base do documento</li>
+        <li><strong>link:</strong> utilizado para linkar um arquivo de imagem ou css a página html</li>
+        <li><strong>script:</strong> utilizado para escrever ou anexar um arquivo normalmente javascript a página</li>
+        <li><strong>meta:</strong> metatags, como charset, description, viewport ou keywords</li>
+        <li><strong>style:</strong> utilizada para adicionar um código css a página</li>
+        <li><strong>body:</strong> corpo ou área principal do documento, dentro deste deve ficar o conteúdo da sua página</li>
+        <li><strong>header:</strong> define um cabeçalho da página ou de uma seção, normalmente pode conter um menu (nav), um logo ou link</li>
+        <li><strong>nav:</strong> define uma área de navegação contendo links, para a formação de menus com hiperlinks</li>
+        <li><strong>footer:</strong> define o rodapé de uma página ou seção</li>
+        <li><strong>main:</strong> define o conteúdo principal da página, deve ser utilizado apenas uma única vez em cada página</li>
+        <li><strong>section:</strong> define uma seção do documento</li>
+        <li><strong>article:</strong> pode ser um post ou notícia de um fórum ou blog, define um conteúdo independente</li>
+        <li><strong>h1 a h6:</strong> representam 6 níveis de títulos, sendo o h1 de maior importância</li>
+        <li><strong>p:</strong> define um parágrafo</li>
+        <li><strong>br:</strong> define uma quebra de linha</li>
+        <li><strong>div:</strong> define uma camada sem formatação, genérico</li>
+        <li><strong>ul:</strong> define uma lista não ordenada</li>
+        <li><strong>li:</strong> define um elemento ou item da lista não ordenada</li>
+        <li><strong>a:</strong> define um link que deve ser apontado com o atributo <i>href</i></li>
+        <li><strong>img:</strong> define a utilização de uma imagem (JPG, GIF, PNG e outras). A imagem deve ser apontada com o uso do atributo <i>src</i></li>
+        <li><strong>strong:</strong> apesar de deixar em negrito, representa a importância deste texto no meio da frase</li>
+    </ul>
+    <h3>Exemplo de Utilização</h3>
+    <pre>
+        <code>
+            &lt;body&gt;
+                &lt;header&gt;
+                    &lt;h1&gt;Página do Burnes&lt;/h1&gt;
+                &lt;/header&gt;
+                &lt;nav&gt;
+                    &lt;a href="index.html" title="Home"&gt;Home&lt;/a&gt;
+                &lt;/nav&gt;
+                &lt;main&gt;
+                    &lt;h1&gt;Olá! Bem vindo a minha Pagina!&lt;/h1&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                    &lt;p&gt;Desenvolvido por Burnes&lt;/p&gt;
+                &lt;/footer&gt;
+            &lt;/body&gt;
+        </code>
+    </pre>
+    <p>Para conhecer mais elementos HTML5, confira a lista no link <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list" target="_blank">HTML5</a></p>
+</body>
+</html>
