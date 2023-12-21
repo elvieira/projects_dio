@@ -8,6 +8,7 @@ class itemMagico {
         this.resistencia = resistenciaItem
     }
     calcularDano() {
+        //Exemplo de operador ternário = CONDIÇÃO ? TRUE : FALSE
         return this.tipo === 'arma' ? this.dano * 2 : this.dano
     }
 }
