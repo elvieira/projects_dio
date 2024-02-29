@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-image: url(../../assets/images/header_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+}
+
+header h1 {
+    font-family: 'Luckiest Guy';
+    letter-spacing: 2px;
+    font-size: 56px;
+    max-width: 450px;
+}
+
+header p {
+    font-size: 18px;
+    width: 85vw;
+    max-width: 750px;
+    margin: 24px 0;
+}
+
+header div.buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header button {
+    padding: 11px 20px;
+    border-radius: 28px;
+    border: none;
+    font-size: 17px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+header button.download {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    gap: 38px;
+}
+
+section div {
+    width: 350px;
+}
+
+section h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+section.alternated {
+    background-color: #F6F6F6;
+}
+
+section.bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+section.bottom h2 {
+    font-family: 'Luckiest Guy';
+    letter-spacing: 2px;
+    max-width: 500px;
+}
+
+section.bottom p {
+    width: 70vw;
+    max-width: 800px;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+@media screen and (max-width: 1060px) {
+    section {
+        flex-direction: column;
+    }
+    
+    section h2 {
+        font-size: 24px;
+    }
+
+    section.alternated div {
+        order: 1;
+    }
+    
+    section.bottom h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    header {
+        padding: 20vw 20px;
+        text-align: left;
+    }
+
+    header button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    header h1 {
+        font-size: 8vw;
+    }
+
+    section h2 {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    
+    section p {
+        padding-left: 5px;
+    }
+}
