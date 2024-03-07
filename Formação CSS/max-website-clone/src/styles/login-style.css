@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+:root {
+    --blue-default: #002BE7;
+    --blue-second: #0224BC;
+    --blue-gradient: linear-gradient(0deg, #07081C 0%, #0223BB 20%, #002BE7 30% );
+    --hr-color: linear-gradient(90deg, #5516BA, #FF00E580 80%);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#07081C 4%, #001366 30%, #07081C 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+nav {
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    height: 60vh;
+    padding: 24px;
+}
+
+main h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    width: 55vw;
+}
+
+main p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 18px;
+    width: 60vw;
+}
+
+form {
+    padding: 32px;
+    background-color: #DEDEDE0F;
+    max-width: 100%;
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    max-width: 800px;
+    color: #FFFFFFCC;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+div.input input {
+    background: #00000033;
+    border: 1px solid #FFFFFF80;
+    padding: 14px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+div.input input:invalid {
+    border: 1px solid #FF0000;
+}
+
+div.login-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div.login-buttons a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4f8bff;
+}
+
+div.login-buttons button {
+    width: 152px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+footer {
+    padding: 24px;
+    background-color: #07081C;
+}
+
+footer div.container-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+footer div.container-links a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+footer div.container-links a:hover {
+    background-color: #FFFFFF33;
+}
+
+footer p {
+    font-size: 11px;
+    text-align: center;
+    margin: 12px;
+}
+
+footer div.container-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.container-social a {
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    div.input {
+        width: 70vw;
+    }
+
+    main p {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    main {
+        padding: 24px 12px;
+    }
+
+    form {
+        background: none;
+    }
+
+    div.input {
+        width: 90vw;
+        max-width: 100%;
+    }
+}
